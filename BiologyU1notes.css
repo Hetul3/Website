@@ -1,0 +1,238 @@
+ul {
+    list-style: none;
+    padding: 0;
+    border-radius:5px;
+    background: rgb(0, 0, 0);
+    margin: 0px;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+    font-family: Verdana;
+}
+li ul { 
+    display: none; 
+}
+ul li a {
+    display: block;
+    padding: 1.1em;
+    font-size: 15px;
+    text-decoration: none;
+    transition:0.2s;
+    white-space: nowrap;
+    color: white;
+}
+ul li a:hover { 
+    background: white;
+    color: black; 
+    transition: 0.2s;
+}
+li:hover > ul {
+    display: block;
+    position: absolute;
+}
+li:hover li { 
+    float: none; 
+}
+li:hover a { 
+    background: black;
+    color:white; 
+}
+li:hover li a:hover { 
+    background: white;
+    color:black; 
+}
+.main-navigation li ul li { 
+    border-top: 0; 
+}
+ul ul ul {
+    left: 100%;
+    top: 0;
+    z-index: 1;
+}
+ul:before, ul:after {
+    content: " ";
+    display: table; 
+}
+ul:after { 
+    clear: both; 
+}
+
+/* Background */
+#defaultbackground {
+    background-color: rgb(254, 255, 255);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    border-radius: 5px;
+
+}
+
+/* Github and Medium Icons */
+.navicon {
+    padding: 8px 1.5em;
+    position: relative;
+    float: right;
+    padding: none;
+    margin: none;
+}
+.navicon:hover .tooltiptext{
+    visibility: visible;
+    background-color:none;
+    opacity: 100;
+    transition: 0.2s;
+}
+
+.navicon .tooltiptext::after {
+    content: "";
+    position:absolute;
+    bottom:100%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.tooltiptext{
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -17%;
+    transition: 0.2s;
+}
+
+.navicon:hover .tooltiptext2{
+    visibility: visible;
+    background-color:none;
+    opacity: 100;
+    transition: 0.2s;
+}
+
+.navicon .tooltiptext2::after {
+    content: "";
+    position:absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.tooltiptext2{
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 17%;
+    transition: 0.2s;
+}
+.icons {
+    color: white;
+    transition: 0.2s;
+}
+.icons:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    padding-top: 100px;
+}
+.sidebar a {
+    display: block;
+    padding: 1rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.sidebar a:hover {
+    margin-left: 20px;
+    transition: 0.2s;
+}
+h1 {
+    margin-left: 18rem;
+    margin-right: 1.5rem;
+    font-family: Verdana;
+    font-size: 3rem;
+    color: black;
+}
+p {
+    font-family: Verdana;
+    font-size: 1.5rem;
+    color: rgb(65, 65, 65);
+    margin-left: 18rem;
+    margin-right: 1.5rem;
+}
+.img {
+    position: relative;
+    margin-left: 18.5rem;
+    margin-right: 2rem;
+    max-width: 750px;
+    width: calc(100% - 20.5rem);
+    height: auto;
+    border: 2px solid rgb(122, 122, 122);
+}
+iframe {
+    position: relative;
+    margin-left: 18.5rem;
+    margin-right: 2rem;
+    max-width: 750px;
+    width: calc(100% - 20.5rem);
+    height: 500px;
+}
+.text {
+    width: 55%;
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    background-image:linear-gradient(
+        to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(
+        to right, rgb(255, 0, 0), rgb(255, 94, 0), rgb(255, 166, 0));
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s linear;
+}
+.text:hover {
+    background-size: 0 2px, 100% 2px;
+}
+.link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-image:linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(to right, rgb(251, 255, 0), rgb(255, 166, 0), rgb(200, 73, 0));
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s linear;
+}
+.link:hover {
+    background-size: 0 2px, 100% 2px;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hetul.css">
+        <title>
+            HPatel
+        </title>
+        <script src="https://kit.fontawesome.com/045d4737ce.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="defaultbackground">
+        <!--Navbar-->        
+        <ul class="main-navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li>
+              <a href="#">Tutoring <i class="fas fa-angle-down"></i></a>             
+              <ul>            
+                <li><a href="#">Grade 11 <i class="fas fa-angle-right"></i></a>            
+                  <ul id="myDropdown">          
+                    <li><a href="Biologypage.html">Biology</a></li>             
+                    <li><a href="Physicspage.html">Physics</a></li>          
+                    <li><a href="Chemistrypage.html">Chemistry</a></li>
+                  </ul>
+                </li>
+              </ul> 
+            </li>
+            <div class="navicon">
+              <a href="https://github.com/Hetul3" target="_blank">
+                <img src = "images/GitHub.png" alt="github icon" width="30" height="30">
+                <span class="tooltiptext">GitHub</span>
+            </a>
+          </div>
+            <div class="navicon">
+              <a href="https://medium.com/@patehetu239" target="_blank">
+                <img src = "images/Medium.png" alt="medium icon" width="60" height="30">
+                <span class="tooltiptext2">Medium</span>
+              </a>
+            </div>
+          </ul>
+
+<!-- Content -->
+<section>
+            <h1 class="name">
+              <a href="">
+                Hello.</a>
+                <br/>
+                <a href="">
+                  I'm Hetul       
+                </a>
+            </h1>
+          </section>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <section>
+            <div class ="backdrop">
+              <p>
+                <br/>
+                Hi, Nice to meet you. I'm currently a high school student in <a href ="http://central.tvdsb.ca/en/index.aspx" class="highlight" target="_blank">London Central Secondary School</a>.
+                If you don't know, I love to incorporate the sciences and math into creative works, you can check this out in some of 
+                <a class="highlight" target="_blank" href="https://medium.com/@patehetu239">my articles</a>.<br/><br/>
+                 I spend most of my day working at my parents business at Ace Mini Mart in London, come say 
+                hi if you're near the area. <br/><br/>
+                I also try my best to help people out that need tutoring or just want to 
+                work ahead. I offer tutoring lessons on my profile at <a class="highlight" target="_blank" href="https://schoolhouse.world/u/79801"> Schoolhouse.world</a> and you can check out some lessons and notes 
+                in the tutoring section on this website. 
+                <br/><br/>
+                            </p>
+            </div>
+            </section>
+
+          <!-- <section>
+            <div class="wrapper">
+              <a href="mailto:patehetu239@gotvdsb" class="contactbtn">
+                <span>
+                  Say Hi
+                </span>
+              </a>
+            </div>  
+            </section>  -->
+            <!-- <div class="backdrop">
+              <p class="text">
+                Hi, I'm a high school student currently attending
+                <a href="http://central.tvdsb.ca/en/index.aspx" target="_blank">
+                  London Central Secondary School.</a>
+                 I've been interested in math and science for
+                quite some time now, and recently got into computer science.
+                First generation immigrant from India. My parents are self-employed 
+                and own a business, 
+                <a href="https://www.yellowpages.ca/bus/Ontario/London/Ace-Mini-Mart/2073060.html" target="_blank">
+                  Ace Mini Mart.</a>
+                 Drop by if you're in the area.
+                 <br/><br/>
+                 I offer some tutoring help for students looking 
+                 for a different teaching perspective, or for 
+                 students wanting to work ahead.
+              </p>
+            </div> -->
+
+          <button id="backgrounddots1" style="top: 5.5rem; left: 65rem" onclick="myFunction()"></button>
+          <button id="backgrounddots2" style="top: 5.5rem; left: 55rem" onclick="myFunction2()"></button>
+          <button id="backgrounddots3" style="top: 5.5rem; left: 45rem" onclick="myFunction3()"></button>
+        </div>
+  
+
+      <script>
+       var acc = document.getElementsByClassName("accordion");
+       var i;
+
+       for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+
+
+      function myFunction() {
+        document.getElementById("defaultbackground").style.backgroundImage = "url(images/background1.png)";
+      }
+      function myFunction2() {
+        document.getElementById("defaultbackground").style.backgroundImage = "url(images/background2.png)";
+      }
+      function myFunction3() {
+        document.getElementById("defaultbackground").style.backgroundImage = "url(images/background3.png)";
+      }
+
+      function drop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(e) {
+        if(!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+          if(myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+</script>
+</body>
+</html>
+<!-- 
+
+
+<p class="amtxt" id="amtxt">
+  About Me
+ </p>
+<div class="containment">
+  <button class="accordion">
+    <i class="fas fa-plus"></i> Backstory
+  </button>
+  <div class="panel">
+    <p>
+      I was born in Gujurat India and immigrated to Toronto when I was 3 years old. 
+      I lived there for about 2 years and moved to Tillsonburg in Ontario. After living there for 8 years, I moved to London Ontario where 
+      I now reside. My parents are very hard workers who own a business and I'm grateful for 
+      their sacrifice in giving me a better life, I help out when I can with the business 
+      so you might see me workin there time to time. 
+    </p>
+  </div>
+  <button class="accordion">
+  <i class="fas fa-plus"></i> How I got into Computer Science
+  </button>
+  <div class="panel">
+    <p>
+      I actually got into computer science and software pretty recently. Like most students, 
+      I was bombarded by beginner computer science activities at my elementry school. You know, 
+      stuff like Scratch, House of Code, lego robot coding and all that other stuff. I always chalked 
+      it up as not really being for me. I was much more interested in math and science, and I didn't 
+      really know that these concepts were integral to the field of computer science. With the 
+      limited experience I had, I just thought that programmers wrote if statements for scenerios all 
+      day. Going into high school was a different experience, there were already people with extensive 
+      experience in programming and hearing about what they do and how they did it got me interested. 
+      However, I didn't just jump right into the field and fall in love with it and it was all happily 
+      ever after.
+      <br/><br/> 
+      My initial experience to it was rocky to sum it up. There is always the initial hurdle of having 
+      ideas of what you want to do like physics simulations, but having to learn all the syntaxes of the 
+      language to actually make it a reality. Nobody really wants to jump into something new and be told to 
+      learn the basics, people want to be able to finish the day with a project they created to give them 
+      motivation. That's really why I started out by watching tutorials to make simple games such as pong 
+      and snake. Now I didn't really know what was happening, but I was getting familiar with everything 
+      and slowly but surely learning. When I got familiar enough with the langauge, I decided to make my own 
+      project, while the project is very basic and took me a lot of time, I felt very accomplished because it 
+      was my <a href="https://github.com/Hetul3/Intro-Physics-Calculators" target="_blank" class="link">first project</a>
+       I created myself. Progress was slow but I always stayed consistent with it, and slowly but surely 
+       I learned to use code as a tool to help me find solutions to problems. I think for any beginners 
+       it's important to always stay motivated, spending a day learning something and being able to show someone 
+       what you created is encouraging and might be the motivation you need to not only keep learning, but love 
+       what you're learning. If you are trying to learn java, I highly recommend follwing along on these 
+       tutorials:
+       <li>
+         <a href="https://www.youtube.com/watch?v=j_ax_yT7KW0&t=652s" target="_blank" class="link">
+         Number Guessing Game
+       </a>
+       </li>
+       <li><a href="https://www.youtube.com/watch?v=bI6e6qjJ8JQ&t=1279s" target="_blank" class="link">
+        Simple Java Snake Game
+      </a>
+      </li>
+      <li><a href="https://www.youtube.com/watch?v=RRubcjpTkks&t=535s" target="_blank" class="link">
+        Basic Concepts of Java
+      </a>
+      </li>
+      <li><a href="https://www.youtube.com/watch?v=xk4_1vDrzzo" target="_blank" class="link">
+        A Full Java Course
+      </a>
+      </li>
+    </p>
+  </div>
+  <button class="accordion">
+    <i class="fas fa-plus"></i> Hobbies
+  </button>
+  <div class="panel">
+    <p>
+      In terms of hobbies in sports, I really love cricket, however my school doesn't have a 
+      cricket club nor are they capible of maintaining one. Though I still actively play it with 
+      relatives since my entire extended family is crazy about cricket. But I play basketball for fun 
+      with my friends all the time we hangout. Not to mention my admiration for racket sports like tennis 
+      and badmitton, these sports are things I can actually have fun playing at school since going to a 
+      school where everyone has grown up playing either basketball or badmitton, there isn't a shortage of 
+      good players to compete.
+      <br/><br/>
+      My guilty pleasure activity is writing. I know that for most people something their guilty pleasure 
+      would be like playing video games, which I do don't get me wrong, but it's just that I feel writing is 
+      really relaxing for me. Writing allows me to vent off any extreme emotions and still gives me the 
+      feeling of doing something productive. This started because my friends would always complain about 
+      how I could go on and on about a topic for probably hours, so one of them gave me the idea of writing it 
+      out in a journal. But the thing is, my hand writing isn't really fast or appealing to look at, so I preferred 
+      to type. I now write <a href="https://medium.com/@patehetu239" target="_blank" class="link">
+        articles
+        </a>
+      about whatever the heck I feel like writing about and giving my honest 
+      opionion on subjects.
+      <br/><br/>
+      The thing about me is that I really love to workout. I spend about 2 hours a day, 5 days a week
+      working out. I have been into fitness and weightlifting for 5 years now and I preach healthy living, 
+      not only on the training side, but also the nutrition side. This past-time of mine has helped me gain 
+      confidence and shape me into a happier person. If you or anybody wants to get into weight-lifiting, 
+      I have a laid it out the basics to begin in my 
+      <a href="https://medium.com/@patehetu239/5-workout-tips-for-beginners-de76eb9f39dc" target="_blank" class="link">
+      here.
+      </a>
+    </p>
+  </div>
+  <button class="accordion">
+    <i class="fas fa-plus"></i> Future Plans
+  </button>
+  <div class="panel">
+    <p>
+      Right now, I am studyng in high school with a focus on going into a STEM major, specifically 
+      either engineering or computer science. I knew I wanted to go into a math and science related field 
+      since I always found the wonder and creativity endering and the problem solving aspects of math something 
+      I could spend my life doing. What specifically wanted me to go into engineering is that aspect of 
+      applying math ad science to create tangible projects that can make a difference in the world. And 
+      truly that's what I find fullfillment in, I want to help out as many people as possible and engineering 
+      would allow me work on things that can do just that. For what type of engineering, I'd be happy going into 
+      software, computer, or electrical. Computer science is also closely related to this, while it might not 
+      teach as many applicable skills as software engineering, it's a much more math intensive and theoretical 
+      program which is what attracts me to it. I always someday might want to go into teaching and be a professor, 
+      I love to teach as you've probably noticed I think is the best way to teach yourself as well. The only thing 
+      stopping me are the many years it takes to gain those certiciations, however it's still a possibility. 
+      <br/><br/>
+      For the short-term plans, I plan on learning much more about algorithms and machine learning as those are 
+      the things that I find interest in. I also plan on creating videos to help people better understand 
+      the topics I'm teaching and just explain cool topics I want to talk about. 
+    </p>
+  </div>
+  <button class="accordion">
+    <i class="fas fa-plus"></i> What I Advocate
+  </button>
+  <div class="panel">
+    <p>
+      Throughout my life, I haven't always had access to many opportunities, which is why I am passionate in 
+      advocating for providing education opportunities to low income families. I have experienced the difference 
+      even an access to a computer can have on a child's education and free premium tutoring organizations such as 
+      <a href="https://www.khanacademy.org" target="_blank" class="link">
+      Khan Academy
+      </a>
+       and 
+       <a href="https://www.youtube.com/c/TheOrganicChemistryTutor/videos?app=desktop" target="_blank" class="link">
+       The Organic Chemistry Tutor
+       </a>
+       . These people have helped me tremendously to work ahead of the school curriculum and realize my passion in 
+       learning, and I hope I can also eventually help out others as how these organizations have helped me. 
+       <br/><br/>
+       Ontop of this, I preach healthy living. To me, your body is one of the things you have control over, and learning 
+       to take care and shape your body is very empowering. It has given me confidence and gave me a goal to always work 
+       towards. I think that everyone should realize this and work on being the best version of themselves that they're 
+       happy with or do it to be healthy. 
+    </p>
+  </div>
+</div> -->
